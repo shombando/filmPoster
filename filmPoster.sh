@@ -30,7 +30,7 @@ filmPost() {
 
 pickOption() {
 	file=$1
-	cat $file | gum filter
+	cat $file | gum filter --sort --indicator="➜"
 }
 
 getInput() {
