@@ -2,8 +2,26 @@
 A Gum powered interactive Bash script to create Hugo film photo posts in a section called `film`. This can be adapted for any kind of a post-type where the user wants to be prompted for specific tags that are defined in plain-text files. 
 
 ## Demo
-![Screencapture of a terminal window side by side with a browser window. The terminal is demonstrating an application that enters information about at photo like title, film, camera, etc. and then selects the file from a file picker. Once the process is completed the browser auto refreshes to show the new photo has been added to the grid and then the photo page is loaded showing the different tags via clicking a few tags it is demonstrated that they were generated and linked with other posts.](./filmPosterDemo.webm "1 min demo of filmPoster usage and results")
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          display: flex;
+          width: 100%;
+          height: 400px;
+        }
+      </style>
 
+	  <div class="container">
+		  <video controls width="800">
+			  <source src="./filmPosterDemo.webm" type="video/webm" />
+			  <p>Alt-text:Screencapture of a terminal window side by side with a browser window. The terminal is demonstrating an application that enters information about at photo like title, film, camera, etc. and then selects the file from a file picker. Once the process is completed the browser auto refreshes to show the new photo has been added to the grid and then the photo page is loaded showing the different tags via clicking a few tags it is demonstrated that they were generated and linked with other posts.</p>
+		  </video>
+	  </div>
+    </div>
+  </foreignObject>
+</svg>
 ## Motivation
 I didn't have a good process to add film photos to my Hugo static site with consistent tags to serve as metadata for camera, film, developer, format, etc. so I cobbled together a small Bash script to collect some input and create a folder as a Hugo `page bundle` but it was a very manual process still and the tag template soon became tedious to maintain.
 I discovered [Gum](https://github.com/charmbracelet/gum) and decided to play with it to see if it would improve my post creation experience and it has been pretty good during my brief testing.
